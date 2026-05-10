@@ -1,0 +1,20 @@
+{
+  "capsule.capture": {
+    "sounds": [
+      {
+        "name": "capsulecorp:capsule_capture",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "capsule.deploy": {
+    "sounds": [
+      {
+        "name": "capsulecorp:capsule_deploy",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  }
+}

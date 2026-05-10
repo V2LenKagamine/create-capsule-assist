@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "capsulecorp:block/capsule_reader"
+    },
+    "type=top": {
+      "model": "capsulecorp:block/capsule_reader",
+      "x": 180
+    },
+    "type=double": {
+      "model": "capsulecorp:block/capsule_reader"
+    }
+  }
+}

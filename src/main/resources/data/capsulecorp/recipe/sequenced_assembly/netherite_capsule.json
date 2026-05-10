@@ -1,0 +1,78 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+  "item": "minecraft:netherite_scrap"
+},
+  "loops": 1,
+  "results": [
+    {
+      "id": "capsulecorp:netherite_capsule"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "capsulecorp:incomplete_netherite_capsule"
+        },
+        {
+          "item": "minecraft:stone_button"
+        }
+      ],
+      "results": [
+        {
+          "id": "capsulecorp:incomplete_netherite_capsule"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "capsulecorp:incomplete_netherite_capsule"
+        },
+        {
+          "item": "minecraft:ender_pearl"
+        }
+      ],
+      "results": [
+        {
+          "id": "capsulecorp:incomplete_netherite_capsule"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "capsulecorp:incomplete_netherite_capsule"
+        },
+        {
+          "item": "minecraft:redstone"
+        }
+      ],
+      "results": [
+        {
+          "id": "capsulecorp:incomplete_netherite_capsule"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "capsulecorp:incomplete_netherite_capsule"
+        }
+      ],
+      "results": [
+        {
+          "id": "capsulecorp:incomplete_netherite_capsule"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "capsulecorp:incomplete_netherite_capsule"
+  }
+}

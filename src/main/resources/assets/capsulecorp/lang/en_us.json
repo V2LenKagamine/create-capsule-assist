@@ -1,0 +1,37 @@
+{
+  "item.capsulecorp.copper_capsule": "Copper Capsule",
+  "item.capsulecorp.iron_capsule": "Iron Capsule",
+  "item.capsulecorp.gold_capsule": "Gold Capsule",
+  "item.capsulecorp.diamond_capsule": "Diamond Capsule",
+  "item.capsulecorp.netherite_capsule": "Netherite Capsule",
+  "item.capsulecorp.empty_capsule": "Empty %s",
+  "item.capsulecorp.incomplete_copper_capsule": "Incomplete Copper Capsule",
+  "item.capsulecorp.incomplete_iron_capsule": "Incomplete Iron Capsule",
+  "item.capsulecorp.incomplete_gold_capsule": "Incomplete Gold Capsule",
+  "item.capsulecorp.incomplete_diamond_capsule": "Incomplete Diamond Capsule",
+  "item.capsulecorp.incomplete_netherite_capsule": "Incomplete Netherite Capsule",
+  "item.capsulecorp.capsule_wallet": "Capsule Wallet",
+
+  "block.capsulecorp.capsule_reader": "Capsule Reader",
+
+  "tooltip.capsulecorp.capacity": "Capacity: %s blocks",
+  "tooltip.capsulecorp.empty": "Empty",
+  "tooltip.capsulecorp.block_count": "Blocks stored: %s",
+  "tooltip.capsulecorp.currently_contains": "Currently contains \"%s\"",
+  "tooltip.capsulecorp.wallet_count": "Capsules: %s/%s",
+
+  "message.capsulecorp.reader.insert_capsule": "Insert an empty capsule to capture a contraption.",
+  "message.capsulecorp.reader.not_capsule": "This is not a capsule.",
+  "message.capsulecorp.reader.already_filled": "This capsule is already filled.",
+  "message.capsulecorp.reader.server_only": "This capsule reader can only capture contraptions on the server.",
+  "message.capsulecorp.reader.no_contraption": "No contraption found to capture.",
+  "message.capsulecorp.reader.no_name": "This contraption must be named before it can be captured.",
+  "message.capsulecorp.reader.multiple_contraptions": "Multiple contraptions are too close to capture safely.",
+  "message.capsulecorp.reader.capacity_exceeded": "Capsule capacity exceeded: %s / %s blocks.",
+  "message.capsulecorp.reader.captured_named": "Captured \"%s\" (%s blocks).",
+  "message.capsulecorp.reader.look_info": "%s — %s blocks",
+
+  "message.capsulecorp.capsule.deploy_failed": "Not enough space for the contraption to deploy.",
+
+  "itemGroup.capsulecorp": "Create: Capsule Corp."
+}

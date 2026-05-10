@@ -1,0 +1,25 @@
+# Gradle
+.gradle/
+build/
+
+# Minecraft dev run directory
+run/
+
+# Local Java/JDK folders
+oracleJdk-*/
+jdk-*/
+jre-*/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Logs / crash reports
+*.log
+logs/
+crash-reports/
+
+# OS
+.DS_Store
+Thumbs.db

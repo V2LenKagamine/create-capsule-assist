@@ -1,0 +1,80 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.78'
+}
+
+version = '0.1.0'
+group = 'fr.emattera.capsulecorp'
+
+base {
+    archivesName = 'capsulecorp'
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+neoForge {
+    version = '21.1.228'
+
+    runs {
+        client {
+            client()
+        }
+
+        server {
+            server()
+        }
+    }
+
+    mods {
+        capsulecorp {
+            sourceSet(sourceSets.main)
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+
+    maven {
+        name = "BlameJared Maven"
+        url = "https://maven.blamejared.com"
+    }
+
+    maven {
+        name = "Fuzs Maven"
+        url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven"
+    }
+
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "RyanHCode Maven"
+                url = "https://maven.ryanhcode.dev/releases"
+            }
+        }
+
+        filter {
+            includeGroup("dev.ryanhcode.sable")
+            includeGroup("dev.ryanhcode.sable-companion")
+        }
+    }
+}
+
+dependencies {
+    api("dev.ryanhcode.sable:sable-common-1.21.1:${sable_version}")
+
+    compileOnly files("libs/create-1.21.1-6.0.10.jar")
+    runtimeOnly files("libs/create-1.21.1-6.0.10.jar")
+
+    compileOnly files("libs/sable-schematic-api-0.2.5.jar")
+    runtimeOnly files("libs/sable-schematic-api-0.2.5.jar")
+
+    compileOnly files("libs/ldlib2-neoforge-1.21.1-2.2.8-all.jar")
+    runtimeOnly files("libs/ldlib2-neoforge-1.21.1-2.2.8-all.jar")
+
+    jarJar(api("dev.ryanhcode.sable-companion:sable-companion-common-1.21.1:[1.6.0,)")) {
+        version {
+            prefer "1.6.0"
+        }
+    }
+}

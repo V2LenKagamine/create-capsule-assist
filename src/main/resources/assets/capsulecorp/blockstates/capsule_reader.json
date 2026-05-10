@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=up": {
+      "model": "capsulecorp:block/capsule_reader"
+    },
+    "facing=down": {
+      "model": "capsulecorp:block/capsule_reader",
+      "x": 180
+    },
+    "facing=north": {
+      "model": "capsulecorp:block/capsule_reader",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "capsulecorp:block/capsule_reader",
+      "x": 90,
+      "y": 180
+    },
+    "facing=west": {
+      "model": "capsulecorp:block/capsule_reader",
+      "x": 90,
+      "y": 270
+    },
+    "facing=east": {
+      "model": "capsulecorp:block/capsule_reader",
+      "x": 90,
+      "y": 90
+    }
+  }
+}
