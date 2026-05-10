@@ -25,7 +25,13 @@ crash-reports/
 Thumbs.db
 
 # Eclipse
+.eclipse/
 .project
 .classpath
 .settings/
+.metadata/
 bin/
+
+# Extracted/decompiled libraries
+libs/sable_schematic_api_extracted/
+*.class
