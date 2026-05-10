@@ -23,3 +23,9 @@ crash-reports/
 # OS
 .DS_Store
 Thumbs.db
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
