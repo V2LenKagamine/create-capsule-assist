@@ -18,7 +18,7 @@ public final class CapsuleCorpConfig {
     private static final int DEFAULT_STABILIZATION_TICKS = 20;
     private static final int DEFAULT_DEPLOY_SEARCH_RADIUS = 3;
 
-    private static final boolean RETURN_EMPTY_CAPSULE = false;
+    private static final boolean DEFAULT_RETURN_EMPTY_CAPSULE = true;
 
     public static final ModConfigSpec SPEC;
     public static final Values VALUES;
@@ -117,7 +117,7 @@ public final class CapsuleCorpConfig {
 
             returnEmptyCapsule = builder
                     .comment("Does an Empty Capsule spawn when you deploy a contraption?")
-                            .define("returnEmptyCapsule",true);
+                            .define("returnEmptyCapsule",DEFAULT_RETURN_EMPTY_CAPSULE);
 
             builder.pop();
 
