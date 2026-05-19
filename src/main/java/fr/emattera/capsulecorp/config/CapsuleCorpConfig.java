@@ -18,6 +18,8 @@ public final class CapsuleCorpConfig {
     private static final int DEFAULT_STABILIZATION_TICKS = 20;
     private static final int DEFAULT_DEPLOY_SEARCH_RADIUS = 3;
 
+    private static final boolean RETURN_EMPTY_CAPSULE = false;
+
     public static final ModConfigSpec SPEC;
     public static final Values VALUES;
 
@@ -70,12 +72,18 @@ public final class CapsuleCorpConfig {
         return VALUES.deploySearchRadius.get();
     }
 
+    public static boolean returnEmptyCapsule() {
+        return VALUES.returnEmptyCapsule.get();
+    }
+
     public static final class Values {
         private final ModConfigSpec.IntValue copperCapacity;
         private final ModConfigSpec.IntValue ironCapacity;
         private final ModConfigSpec.IntValue goldCapacity;
         private final ModConfigSpec.IntValue diamondCapacity;
         private final ModConfigSpec.IntValue netheriteCapacity;
+
+        private final ModConfigSpec.BooleanValue returnEmptyCapsule;
 
         private final ModConfigSpec.IntValue capsuleWalletSlots;
 
@@ -106,6 +114,10 @@ public final class CapsuleCorpConfig {
             netheriteCapacity = builder
                     .comment("Maximum number of blocks a Netherite Capsule can store.")
                     .defineInRange("netheriteCapacity", DEFAULT_NETHERITE_CAPACITY, 1, 8192);
+
+            returnEmptyCapsule = builder
+                    .comment("Does an Empty Capsule spawn when you deploy a contraption?")
+                            .define("returnEmptyCapsule",true);
 
             builder.pop();
 

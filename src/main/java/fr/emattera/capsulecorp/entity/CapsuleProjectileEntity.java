@@ -111,11 +111,21 @@ public class CapsuleProjectileEntity extends ThrowableItemProjectile {
 
         playDeployFeedback(deployPos);
 
-        stabilizationTicksRemaining = CapsuleCorpConfig.postDeployStabilizationTicks();
+        if(CapsuleCorpConfig.returnEmptyCapsule()) {
+            ItemEntity returnedCaps = new ItemEntity(
+                    level(),
+                    getX(),
+                    getY(),
+                    getZ(),
+                    new ItemStack(sourceCapsuleStack.getItem(),1));
+            level().addFreshEntity(returnedCaps);
+        }
 
+        stabilizationTicksRemaining = CapsuleCorpConfig.postDeployStabilizationTicks();
         if (stabilizationTicksRemaining <= 0) {
             discard();
         }
+
     }
 
     private void stabilizeAfterDeploy() {
