@@ -3,7 +3,7 @@ plugins {
     id 'net.neoforged.moddev' version '2.0.78'
 }
 
-version = '0.1.0'
+version = '0.1.1'
 group = 'fr.emattera.capsulecorp'
 
 base {
@@ -36,6 +36,10 @@ repositories {
     mavenCentral()
 
     maven {
+        url "https://cursemaven.com"
+    }
+
+    maven {
         name = "BlameJared Maven"
         url = "https://maven.blamejared.com"
     }
@@ -63,14 +67,17 @@ repositories {
 dependencies {
     api("dev.ryanhcode.sable:sable-common-1.21.1:${sable_version}")
 
-    compileOnly files("libs/create-1.21.1-6.0.10.jar")
-    runtimeOnly files("libs/create-1.21.1-6.0.10.jar")
+    compileOnly "curse.maven:create-328085:7963363"
+    runtimeOnly "curse.maven:create-328085:7963363"
 
-    compileOnly files("libs/sable-schematic-api-0.2.5.jar")
-    runtimeOnly files("libs/sable-schematic-api-0.2.5.jar")
+    compileOnly "curse.maven:sableschemapi-1526951:8071476"
+    runtimeOnly "curse.maven:sableschemapi-1526951:8071476"
 
-    compileOnly files("libs/ldlib2-neoforge-1.21.1-2.2.8-all.jar")
-    runtimeOnly files("libs/ldlib2-neoforge-1.21.1-2.2.8-all.jar")
+    compileOnly "curse.maven:sable-1312371:8007005"
+    runtimeOnly "curse.maven:sable-1312371:8007005"
+
+    compileOnly "curse.maven:ldlib2-626676:8108634"
+    runtimeOnly "curse.maven:ldlib2-626676:8108634"
 
     jarJar(api("dev.ryanhcode.sable-companion:sable-companion-common-1.21.1:[1.6.0,)")) {
         version {
